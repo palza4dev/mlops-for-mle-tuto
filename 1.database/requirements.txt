@@ -1,0 +1,7 @@
+# ml
+pandas
+psycopg2-binary
+scikit-learn
+
+# utils
+isort
