@@ -19,7 +19,7 @@ parser.add_argument("--run-id", dest="run_id", type=str)
 args = parser.parse_args()
 
 # model_pipeline = mlflow.sklearn.load_model(f"runs:/{args.run_id}/{args.model_name}")
-# 모델 종류와 관계없이 pyfunc.load_model()으로 불러올 수도 있음.
+# 모델 종류와 관계없이 mlflow.pyfunc.load_model()으로 불러올 수도 있음.
 model_pipeline = mlflow.pyfunc.load_model(f"runs:/{args.run_id}/{args.model_name}")
 
 # 2. get data
